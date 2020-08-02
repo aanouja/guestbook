@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: php-redis
-        image: docker.io/patrocinio/gb-backend-amd64:sync_redis
+        image: docker.io/aanoujaibm/gb-backend-amd64:sync_redis
         imagePullPolicy: Always
         resources:
           requests:
@@ -24,3 +24,6 @@ spec:
             memory: 100Mi
         ports:
         - containerPort: 80
+        env:
+          - name: BACKEND_ROUTE_URL
+            value: backend-guestbook-amine.prevail-amine-haytahm-e-fa9ee67c9ab6a7791435450358e564cc-0000.eu-de.containers.appdomain.cloud

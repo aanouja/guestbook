@@ -1,6 +1,9 @@
 var redisApp = angular.module('redis', ['ui.bootstrap']);
 
-const BACKEND = "http://backend-guestbook-eduardo.prevail-amine-haytahm-e-fa9ee67c9ab6a7791435450358e564cc-0000.eu-de.containers.appdomain.cloud";
+//const BACKEND = "http://backend-guestbook-eduardo.prevail-amine-haytahm-e-fa9ee67c9ab6a7791435450358e564cc-0000.eu-de.containers.appdomain.cloud";
+
+var BACKEND = process.env.BACKEND_ROUTE_URL;
+console.log ('BACKEND_ROUTE_URL: ', BACKEND);
 
 function RedisController() {
   console.log ("Constructor");

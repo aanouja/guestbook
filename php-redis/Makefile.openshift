@@ -13,7 +13,7 @@
 # limitations under the License.
 
 TAG = openshift
-REGISTRY=docker.io/patrocinio
+REGISTRY=docker.io/aanoujaibm
 #REGISTRY = gcr.io/google-samples
 ARCH ?= $(shell go env GOARCH)
 ALL_ARCH = amd64 arm arm64 ppc64le s390x
