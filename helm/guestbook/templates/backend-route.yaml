@@ -5,7 +5,7 @@ metadata:
     app: guestbook
     tier: backend
   name: backend
-  namespace: guestbook
+  namespace: guestbook-amine
 spec:
   port:
     targetPort: 8080
